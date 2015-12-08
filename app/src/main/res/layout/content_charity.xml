@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_charity" tools:context="com.example.janela.bca.charity">
+
+    <ScrollView
+        android:id="@+id/SonucScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_about"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="30sp"
+
+            android:layout_marginTop="89dp"
+            android:text="For local donations, please visit:
+            \nwww.philcancer.org.ph
+            \n\nFor international donations, please visit:
+            \nwww.pinkribbon.org
+
+            \n\nNational Cancer Institute
+            \n9609 Medical Center Drive Room 2W12, MSC 9708
+            \nTelephone: 301-435-3848
+            \nE-mail: ncicenters-r@mail.nih.gov
+
+            \n\nTo find other cancer centers, please visit the following website:
+            \nwww.cancer.gov/research/nci-role/cancer-centers/find
+
+"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </ScrollView>
+</RelativeLayout>
